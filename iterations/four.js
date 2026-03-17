@@ -1,11 +1,10 @@
 const myObj = {
     js: 'javascript',
     cpp: 'C++',
-    rb: 'rb',
+    rb: 'ruby',
     swift: 'swift by app'
 }
 
-for (const key in myObj) {
-    console.log(myObj[key])
-    
+for (const element in myObj) {
+   console.log(`${element} is shortcut for ${myObj[element]}`)
 }
