@@ -24,6 +24,23 @@
     list.appendChild(document.createTextNode(langName))
     document.querySelector('.language').appendChild(list)
   }
-  addLanguageOpti('golang')
+  addLanguageOpti('PHP')
+
+  // EDIT
+
+  const secondLang = document.querySelector('li:nth-child(2)')
+  // secondLang.innerHTML = 'JAVA'
+  const newli = document.createElement('li')
+  newli.textContent = 'Mojo'
+  secondLang.replaceWith(newli)
+
+  // edit
+const firstLang = document.querySelector("li:first-child")
+firstLang.textContent = 'Ruby'
+
+// remove
+
+const lastlang = document.querySelector('li:last-child')
+lastlang.remove()
 </script>
 </html>
