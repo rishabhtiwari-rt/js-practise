@@ -11,11 +11,18 @@
   
 </body>
 <script>
-  const sayRishabh = function(){
-    console.log("rishabh")
+  // const sayRishabh = function(){
+  //   console.log("rishabh")
+  // }
+
+  const changeText = function(){
+    document.querySelector('h1').innerHTML = "best JS series"
   }
-  document.querySelector('h1').innerHTML = "best js series"
-  setTimeout(sayRishabh, 2000)
+  const changeMe = setTimeout(changeText, 2000)
+  document.querySelector('#stop').addEventListener('click', function(){
+    clearTimeout(changeMe)
+    console.log("stopped")
+  })
 </script>
 
 </html>
