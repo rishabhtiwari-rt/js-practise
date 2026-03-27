@@ -28,7 +28,21 @@
 
   // clearInterval(stopIt)
 
-  document.querySelector('#start')
+  let intervalId;
+
+  const letsStopIt = function(){
+      console.log("learn js properly", Date.now());
+    }
+
+  document.querySelector('#start').addEventListener('click', function(){
+    intervalId = setInterval(letsStopIt, 2000)
+
+  })
+
+  document.querySelector('#stop').addEventListener('click', function(){
+    clearInterval(intervalId)
+    
+  })
 </script>
 
 </html>
